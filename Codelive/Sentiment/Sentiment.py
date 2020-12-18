@@ -130,7 +130,7 @@ def evaluate_model(
         f_score = 2 * (precision * recall) / (precision + recall)
     return {"precision": precision, "recall": recall, "f-score": f_score}
 
-def test_model(input_data: str = "/home/long/PycharmProjects/HWbyNgLong/training.txt"):
+def test_model(input_data: str = "/home/long/PycharmProjects/HWbyHoang/training.txt"):
     #  Load saved trained model
     loaded_model = spacy.load("model_artifacts")
     # Generate prediction
