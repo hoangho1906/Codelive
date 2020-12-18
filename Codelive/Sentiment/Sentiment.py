@@ -5,7 +5,7 @@ from spacy.util import minibatch, compounding
 
 
 def load_training_data(
-        data_directory: str = "/homework/PycharmProjectbyHoang/PycharmProjects/HWbyH/training.txt",
+        data_directory: str = "/PycharmProjects/byH/training.txt",
         split: float = 0.8,
         limit: int = 0
 ) -> tuple:
@@ -130,7 +130,7 @@ def evaluate_model(
         f_score = 2 * (precision * recall) / (precision + recall)
     return {"precision": precision, "recall": recall, "f-score": f_score}
 
-def test_model(input_data: str = "/home/long/PycharmProjects/HWbyHoang/training.txt"):
+def test_model(input_data: str = "//PycharmProjects/training.txt"):
     #  Load saved trained model
     loaded_model = spacy.load("model_artifacts")
     # Generate prediction
